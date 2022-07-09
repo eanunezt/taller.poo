@@ -2,8 +2,8 @@ package edu.itli.talleres.poo.vehiculos;
 
 public class Vehiculo {
 	
-	private String marca;
-	private String placa;
+	public String marca;
+	protected String placa;
 	private String tipo;
 	
 	/**
@@ -19,6 +19,18 @@ public class Vehiculo {
 		this.tipo = tipo;
 	}
 	
+	
+	
+	/**
+	 * 
+	 */
+	public Vehiculo() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+
 	public void imprimirDatos() {
 		
 		System.out.println("marca:"+marca);
