@@ -21,6 +21,9 @@ public class TestHerencia4 {
         listin1.addProfesor(profesor1);
 
         listin1.addProfesor(interino1);
+        
+        ProfesorInterino interino2 = new ProfesorInterino("José Luis2", "Morales Pérez2", 59, fecha1);
+        listin1.addProfesor(interino2);
 
         listin1.listar(); 
         } //Cierre del main

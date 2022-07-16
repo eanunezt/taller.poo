@@ -2,6 +2,7 @@ package edu.itli.talleres.poo.profesores;
 public class Profesor extends Persona {  
 
     private String idProfesor;
+    public static String NOMBRE_INSTITUO="ITLI";
 
     public Profesor () {     
     	super();
@@ -30,5 +31,37 @@ public class Profesor extends Persona {
         + getNombre() + " " +  getApellidos() 
         +" con Id de profesor: " + getIdProfesor() );   
         } 
+    
+    /**
+     *  Obtiene el estado del profesor
+     * @param anio
+     * @return ACTIVO O INACTIVO
+     */
+    public String obtenerEstado(Integer anio) {
+    	
+    	if(anio<= 2000)
+    	 return "INACTIVO";
+    	
+    	return "ACTIVO";
+    	
+    }
+    
+    /**
+     * Obtiene el estado del profesor
+     * @param tipoProfesor
+     * @return ACTIVO O INACTIVO
+     */
+   public String obtenerEstado(String tipoProfesor) {
+    	
+    	if(!"INTERINO".equals(tipoProfesor))
+    	 return "INACTIVO";
+    	
+    	return "ACTIVO";
+    	
+    }
+    
+    
+    
+    
 
 }

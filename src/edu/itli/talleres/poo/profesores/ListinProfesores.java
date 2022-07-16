@@ -27,6 +27,8 @@ public class ListinProfesores{
         for (Profesor tmp: listinProfesores) { //Uso de for extendido
 
             tmp.mostrarDatos(); 
+            String estado=tmp.obtenerEstado(2015);
+            System.out.println ("ESTADO: "+estado);
             
         }
 
