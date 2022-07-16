@@ -20,7 +20,7 @@ public class AdminProfesores {
 		
 		System.out.println("profesor1:"+profesor1.obtenerCodigo());
 		System.out.println("profesor2:"+profesor2.obtenerCodigo());		
-		System.out.println("profesor2:"+persona1.obtenerNombre());
+		System.out.println("persona1:"+persona1.obtenerNombre());
 		
 		ProfesorAbs profesorAbs=new ProfesorTemporal();
 		
