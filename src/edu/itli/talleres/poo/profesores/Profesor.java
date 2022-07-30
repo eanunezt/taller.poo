@@ -1,4 +1,7 @@
 package edu.itli.talleres.poo.profesores;
+
+import edu.itli.talleres.poo.utilidades.EjemploClaseUtil;
+
 public class Profesor extends Persona {  
 
     private String idProfesor;
@@ -28,7 +31,7 @@ public class Profesor extends Persona {
     public void mostrarDatos() {
 
         System.out.println ("Datos Profesor. Profesor de nombre: " 
-        + getNombre() + " " +  getApellidos() 
+        + EjemploClaseUtil.convertirMaysucula(getNombre())+ " " +  getApellidos() 
         +" con Id de profesor: " + getIdProfesor() );   
         } 
     
